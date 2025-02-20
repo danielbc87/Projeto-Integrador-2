@@ -10,10 +10,10 @@ HealthOrganizer é um aplicativo desenvolvido para ajudar no controle de consult
 ## Capturas de Tela
 
 ### Tela Principal
-![Tela Principal](https://github.com/danielbc87/Projeto-Integrador-2/blob/main/Tela%20-%20Principal.png)
+![Tela Principal](https://github.com/danielbc87/Projeto-Integrador-2/blob/master/Tela%20-%20Principal.png)
 
 ### Tela Agendar Consulta
-![Tela Agendar Consulta](https://github.com/danielbc87/Projeto-Integrador-2/blob/main/Tela%20-%20Agendar%20Consulta.png)
+![Tela Agendar Consulta](https://github.com/danielbc87/Projeto-Integrador-2/blob/master/Tela%20-%20Agendar%20Consulta.png)
 
 ### Tela Adicionar Medicamento
-![Tela Adicionar Medicamento](https://github.com/danielbc87/Projeto-Integrador-2/blob/main/Tela%20-%20Adicionar%20Medicamento.png)
+![Tela Adicionar Medicamento](https://github.com/danielbc87/Projeto-Integrador-2/blob/master/Tela%20-%20Adicionar%20Medicamento.png)
