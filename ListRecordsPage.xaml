@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Health_Organizer.ListRecordsPage"
+             Title="Registros Salvos">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <!-- Banner Superior -->
+        <Frame BackgroundColor="Purple" Padding="10">
+            <Label Text="Registros Salvos"
+                   TextColor="White"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Lista de Medicamentos -->
+        <Label Text="Medicamentos" FontSize="18" FontAttributes="Bold" />
+        <ListView x:Name="MedicationsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold" />
+                            <Label Text="{Binding Time}" FontSize="14" TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Button Text="Editar" BackgroundColor="Blue" TextColor="White" 
+                                        Clicked="OnEditMedicationClicked" CommandParameter="{Binding .}"/>
+                                <Button Text="Excluir" BackgroundColor="Red" TextColor="White" 
+                                        Clicked="OnDeleteMedicationClicked" CommandParameter="{Binding .}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Lista de Consultas -->
+        <Label Text="Consultas" FontSize="18" FontAttributes="Bold" />
+        <ListView x:Name="AppointmentsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Doctor}" FontSize="16" FontAttributes="Bold" />
+                            <Label Text="{Binding Date, StringFormat='Data: {0} - Hora: {1}'}" FontSize="14" TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Button Text="Editar" BackgroundColor="Blue" TextColor="White" 
+                                        Clicked="OnEditAppointmentClicked" CommandParameter="{Binding .}"/>
+                                <Button Text="Excluir" BackgroundColor="Red" TextColor="White" 
+                                        Clicked="OnDeleteAppointmentClicked" CommandParameter="{Binding .}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </VerticalStackLayout>
+</ContentPage>
+
